@@ -1,0 +1,57 @@
+.card {
+  border-radius: 0.5rem;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    rgba(27, 165, 156, 1) 0%,
+    rgba(20, 51, 90, 1) 100%
+  );
+  display: flex;
+  width: 80vw;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  @media screen and (min-width: 900px) {
+    max-width: 50vw;
+  }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px 20px rgba(20, 51, 90, 1);
+  }
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+.price {
+  display: block;
+  max-width: 50%;
+  margin-left: auto;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "eurostile";
+}

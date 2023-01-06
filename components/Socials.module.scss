@@ -1,0 +1,14 @@
+@import "../styles/variables/color-palette";
+
+.socials {
+  padding: 0 !important;
+  color: map-get(map-get($themes, "light"), "color-icon");
+  cursor: pointer;
+  & svg {
+    margin: 0 1rem;
+    transition: ease-in-out 200ms;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

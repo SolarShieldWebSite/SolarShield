@@ -1,0 +1,29 @@
+{
+  "name": "solar_shield",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "next": "12.0.7",
+    "nodemailer": "^6.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-jotform-embed": "^1.1.2",
+    "react-microsoft-clarity": "^1.1.2",
+    "react-responsive": "^9.0.0-beta.5",
+    "sass": "^1.45.1",
+    "swiper": "^7.4.1"
+  },
+  "devDependencies": {
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7"
+  }
+}

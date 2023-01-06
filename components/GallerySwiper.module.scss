@@ -1,0 +1,19 @@
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & a {
+    width: 100%;
+  }
+  & img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 900px) {
+      max-height: 30vh;
+    }
+  }
+}

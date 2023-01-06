@@ -1,0 +1,70 @@
+@import "../styles/mixins/mixins";
+@import "../styles/variables/color-palette";
+
+.main {
+  min-height: 100vh;
+  background: rgba(18, 127, 142, 0.05);
+  @include theme-aware("background", "color-background");
+}
+
+.logo {
+  margin: 0.05rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.social {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  & svg {
+    margin: 0 0.6rem;
+    transition: color 300ms;
+    &:hover {
+      color: #1ba59c;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  min-height: 4.5rem;
+  align-items: center;
+  // position: fixed;
+  // z-index: 102;
+  // top: 0;
+  @include theme-aware("background", "color-nav");
+}
+
+.footer {
+  color: white;
+  padding: 2rem 1rem;
+  @media screen and (min-width: 900px) {
+    padding: 2rem 13rem;
+  }
+  @include theme-aware("background", "color-nav");
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: white;
+  background: #101522;
+  min-width: 100%;
+  padding: 1rem 0.5rem;
+}

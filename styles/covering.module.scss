@@ -1,0 +1,72 @@
+@import "./variables/color-palette";
+@import "./mixins/mixins";
+
+.contact {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 900px) {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  & a {
+    padding: 1rem;
+    font-weight: bold;
+    color: map-get(map-get($themes, "dark"), "color-icon");
+    display: flex;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    & svg {
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+  }
+}
+
+.text_block {
+  padding-bottom: 2rem;
+}
+
+.text {
+  font-size: 1.15rem;
+  color: map-get(map-get($themes, "dark"), "color-text");
+  line-height: 1.6rem;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 2rem 2rem 0 2rem;
+  & strong {
+    color: map-get(map-get($themes, "dark"), "color-icon");
+  }
+  & a {
+    color: map-get(map-get($themes, "dark"), "color-icon");
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+}
+
+.divider {
+  height: 20vh;
+  width: 100vw;
+  @media screen and (min-width: 900px) {
+    height: 30vh;
+  }
+  background-image: url("/images/cov_7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    content: "";
+    background-color: rgba(20, 51, 90, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
