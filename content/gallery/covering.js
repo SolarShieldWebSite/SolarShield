@@ -60,10 +60,6 @@ export const coveringData = [
     alt: "Covering_15",
   },
   {
-    src: "/images/covering/C_16.jpg",
-    alt: "Covering_16",
-  },
-  {
     src: "/images/covering/C_17.jpg",
     alt: "Covering_17",
   },
