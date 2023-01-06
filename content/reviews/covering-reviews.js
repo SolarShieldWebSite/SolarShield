@@ -11,7 +11,7 @@ Je recommande cet établissement +++.`,
   },
   {
     id: 2,
-    author: "C",
+    author: "Clement",
     avatar:
       "https://source.boringavatars.com/beam/121/Grace?colors=264653,f4a261,e76f51",
     rating: 5,
