@@ -10,16 +10,23 @@ import { useEffect, useState } from "react";
 SwiperCore.use([Navigation, Autoplay]);
 
 function GallerySwiper({ data }) {
-  const [format, setFormat] = useState(false);
+  const [format, setFormat] = useState(1);
+
+  const handleResize = () => {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      setFormat(1);
+    } else if (window.matchMedia("(max-width: 1000px)").matches) {
+      setFormat(2);
+    } else {
+      setFormat(3);
+    }
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      setFormat(window.matchMedia("(max-width: 900px)").matches);
-    });
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", () => {
-        setFormat(window.matchMedia("(max-width: 900px)").matches);
-      });
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -28,7 +35,7 @@ function GallerySwiper({ data }) {
       navigation={true}
       spaceBetween={20}
       loop={true}
-      slidesPerView={format ? 2 : 4}
+      slidesPerView={format}
       autoplay={{ delay: 3000, disableOnInteraction: false }}
     >
       {data.map((image, index) => (

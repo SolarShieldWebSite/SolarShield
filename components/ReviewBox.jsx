@@ -12,16 +12,23 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function ReviewBox({ reviews = [], dark = false }) {
-  const [format, setFormat] = useState(false);
+  const [format, setFormat] = useState(1);
+
+  const handleResize = () => {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      setFormat(1);
+    } else if (window.matchMedia("(max-width: 1000px)").matches) {
+      setFormat(2);
+    } else {
+      setFormat(3);
+    }
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      setFormat(window.matchMedia("(max-width: 900px)").matches);
-    });
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", () => {
-        setFormat(window.matchMedia("(max-width: 900px)").matches);
-      });
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -29,7 +36,7 @@ export default function ReviewBox({ reviews = [], dark = false }) {
     <section>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        slidesPerView={format ? 1 : 3}
+        slidesPerView={format}
         navigation
         pagination={{ clickable: true }}
         className={`${styles.swiper} ${dark ? styles.dark : ""}`}

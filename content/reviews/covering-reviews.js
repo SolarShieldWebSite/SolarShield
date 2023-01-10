@@ -39,9 +39,17 @@ Je recommande cet établissement +++.`,
     id: 5,
     author: "Theonie T",
     avatar:
-      "https://source.boringavatars.com/beam/121/Stefan?colors=264653,f4a261,e76f51",
+      "https://source.boringavatars.com/michel/121/Stefan?colors=264653,f4a261,e76f51",
     rating: 5,
     content: `Covering complet + ciel de toit étoile expérience très satisfaisante 
     Travail de qualité rien à redire là dessus`,
+  },
+  {
+    id: 6,
+    author: "Gahallaye S",
+    avatar:
+      "https://source.boringavatars.com/beam/121/patrik?colors=264653,f4a261,e76f51",
+    rating: 5,
+    content: `Excellent travail, équipe très professionnelle. Vous pouvez vous y rendre les yeux fermés pour tous projets.`,
   },
 ];
