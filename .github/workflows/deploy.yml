@@ -35,7 +35,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          protocol: ftps
+          protocol: ftps-legacy
           port: 22
           dry-run: true
           server: ${{ secrets.FTP_SERVER_DEV }}
