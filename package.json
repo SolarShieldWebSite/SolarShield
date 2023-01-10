@@ -2,6 +2,7 @@
   "name": "solar_shield",
   "author": "arthurmtro",
   "private": true,
+  "packageManager": "npm@18.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
