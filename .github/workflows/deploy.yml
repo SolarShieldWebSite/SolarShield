@@ -24,7 +24,7 @@ jobs:
           cache: "npm"
 
       - name: ⏬ install Project
-        run: npm install
+        run: npm install --force
 
       - name: 🔨 Build Project
         run: CI=false npm run export
