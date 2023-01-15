@@ -15,8 +15,8 @@ export default function Footer(props) {
       <div className={styles.top_section}>
         <img src="/logo_white.svg" alt="logo" width={150} height={100} />
         <p>
-          Texte à intégrer à la place : L&apos;atelier, basé à Angers, est
-          ouvert du Mardi au Samedi de 9h à 18h30.
+          L&apos;atelier, basé à Angers, est ouvert du Mardi au Samedi de 9h à
+          18h30.
           <br /> Temps de pose des vitres teintées : environ 1H30.
           Caractéristiques : film solaire anti-effraction, film teinté anti-uv,
           la pose de vitres teintées conservent des températures agréables au
