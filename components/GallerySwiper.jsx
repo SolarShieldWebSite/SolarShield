@@ -14,7 +14,7 @@ function GallerySwiper({ data }) {
 
   const handleResize = () => {
     if (window.matchMedia("(max-width: 700px)").matches) {
-      setFormat(1);
+      setFormat(2);
     } else if (window.matchMedia("(max-width: 1000px)").matches) {
       setFormat(2);
     } else {

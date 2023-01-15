@@ -44,6 +44,24 @@ class CustomDocument extends Document {
           `,
             }}
           />
+
+          {/* Axeptio */}
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.axeptioSettings = {
+                clientId: "639a26bfa089325e0a164c72",
+                cookiesVersion: "solarshield-fr",
+              };
+               
+              (function(d, s) {
+                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+                e.async = true; e.src = "//static.axept.io/sdk.js";
+                t.parentNode.insertBefore(e, t);
+              })(document, "script");`,
+            }}
+          />
         </Head>
         <body>
           <Main />
