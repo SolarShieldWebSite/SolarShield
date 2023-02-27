@@ -35,17 +35,16 @@ export default function Tesla() {
       <div className={styles.text_container}>
         <p className={styles.text}>
           La <strong>Tesla model 3</strong> ne dispose pas de{" "}
-          <strong>vitres teintées</strong>
-          d’origine. Il s’avère indispensable d’avoir une{" "}
-          <strong>protection solaire</strong> sur l’immense{" "}
-          <strong>lunette arrière</strong> que possède celle-ci.
+          <strong>vitres teintées</strong> d&apos;origine. Il s&apos;avère
+          indispensable d&apos;avoir une <strong>protection solaire</strong> sur
+          l&apos;immense <strong>lunette arrière</strong> que possède celle-ci.
         </p>
         <p className={styles.text}>
           Chez SolarShield la lunette arrière est réalisée de haut en bas sans
           coupe. Nous réalisons la{" "}
           <strong>pose de film anti-uv et anti-effraction</strong> sur la
           totalité de la lunette et pas seulement sur la partie basse non
-          teintée d’origine. Nous appliquons également un{" "}
+          teintée d&apos;origine. Nous appliquons également un{" "}
           <strong>film de protection solaire</strong> sur les vitres arrières et
           les custodes.
         </p>
@@ -66,8 +65,8 @@ export default function Tesla() {
         </h2>
         <p className={styles.text}>
           Muni de votre facture SolarShield, obtenez 10% de réduction sur
-          l’ensemble des prestations de <strong>protections carrosserie</strong>{" "}
-          chez notre partenaire{" "}
+          l&apos;ensemble des prestations de{" "}
+          <strong>protections carrosserie</strong> chez notre partenaire{" "}
           <Link href="https://www.detailing-maker.com/" passHref>
             <a>Detailing Maker</a>
           </Link>{" "}
@@ -75,7 +74,7 @@ export default function Tesla() {
         </p>
         <p className={styles.text}>
           Vous souhaitez protéger votre carrosserie tout en personnalisant
-          l’aspect de votre Tesla ? SolarShield vous propose la{" "}
+          l&apos;aspect de votre Tesla ? SolarShield vous propose la{" "}
           <Link href="/pose-vitres-teintees-voiture" passHref>
             <a>pose de covering</a>
           </Link>{" "}

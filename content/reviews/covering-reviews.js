@@ -52,4 +52,12 @@ Je recommande cet établissement +++.`,
     rating: 5,
     content: `Excellent travail, équipe très professionnelle. Vous pouvez vous y rendre les yeux fermés pour tous projets.`,
   },
+  {
+    id: 7,
+    author: "Michael Li",
+    avatar:
+      "https://source.boringavatars.com/beam/121/pierre?colors=264653,f4a261,e76f51",
+    rating: 5,
+    content: `Rapport qualité prix imbattable. Merci pour l'accueil, équipe sympas tout simplement. Je recommande ! PS: les films de chez Teckwrap ont vraiment une couleur incroyable !`
+  }
 ];
