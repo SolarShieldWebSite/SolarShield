@@ -49,6 +49,9 @@ a {
 }
 
 .big_title {
+  @media screen and (width <= 900px) {
+    font-size: 1.75rem;
+  }
   font-size: 2.3rem;
   margin: 1rem 0;
   padding: 1.5rem 0;

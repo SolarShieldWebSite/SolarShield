@@ -33,7 +33,7 @@
 
 .contact,
 .gps {
-  padding: 1rem;
+  padding: 0 1rem;
   border-radius: 50%;
   border: none;
   min-width: 60px;
@@ -44,6 +44,7 @@
 }
 
 .gps {
+  padding: 0 1rem;
   transform: scale(0.9);
   cursor: pointer;
   @include theme-aware("background-color", "color-icon");

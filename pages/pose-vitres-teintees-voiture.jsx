@@ -52,7 +52,7 @@ export default function Vitres() {
       {/* VIDEO */}
 
       <div className={styles.parallaxVideo}>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline>
           <source src="/videos/VT.mp4" type="video/mp4" />
         </video>
       </div>

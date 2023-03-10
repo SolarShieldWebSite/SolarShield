@@ -104,7 +104,7 @@ export default function Tesla() {
 
       {/* VIDEO */}
       <div className={styles.parallaxVideo}>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline>
           <source src="/videos/TESLA.mp4" type="video/mp4" />
         </video>
       </div>
