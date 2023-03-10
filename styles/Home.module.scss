@@ -1,0 +1,106 @@
+@mixin home_btn {
+  position: absolute;
+  background: rgba(20, 51, 90, 0.8);
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: "eurostile";
+  border: solid white 2px;
+  border-radius: 3px;
+  color: white;
+  min-width: 25ch;
+  padding: 0.5em 0;
+  font-size: 1.2em;
+  transition: transform ease-in-out 300ms;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(50%) scale(1.2);
+  }
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.title {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 2rem;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.vitre {
+  background-image: url("/images/vitre_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 50vh;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(20, 51, 90, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: all ease-in-out 300ms;
+  }
+}
+
+.vitre_btn {
+  bottom: 15%;
+  margin-bottom: 2em;
+  @include home_btn;
+}
+
+.covering {
+  background-image: url("/images/cov_3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 50vh;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(20, 51, 90, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: all ease-in-out 300ms;
+  }
+}
+
+.covering_btn {
+  top: 15%;
+  margin-top: 2em;
+  @include home_btn;
+}
+
+.hovered {
+  &:before {
+    background: transparent;
+  }
+}

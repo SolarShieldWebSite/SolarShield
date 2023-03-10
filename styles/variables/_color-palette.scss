@@ -1,0 +1,24 @@
+$themes: (
+  light: (
+    color-icon: #009895,
+    color-active: #009895,
+    color-nav: rgba(20, 51, 90, 1),
+    color-meet: rgb(255, 153, 0),
+    color-text-meet : white,
+    color-background: rgba(18, 127, 142, 0.05),
+    color-text: #9195a2,
+    color-title: #2f3138,
+    color-form: black,
+  ),
+  dark: (
+    color-icon: rgb(217, 165, 35),
+    color-active: white,
+    color-nav: #171f2f,
+    color-meet: white,
+    color-text-meet: black,
+    color-background: rgb(0, 0, 0),
+    color-text: white,
+    color-title: white,
+    color-form: white,
+  ),
+);

@@ -1,0 +1,89 @@
+@import "../styles/variables/color-palette";
+@import "../styles/mixins/mixins";
+
+.cta_container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  @media screen and (min-width: 900px) {
+    justify-content: center;
+  }
+  &_light {
+    background: linear-gradient(
+      0deg,
+      rgb(20, 51, 90) 28%,
+      rgba(20, 51, 90, 0.5) 71%,
+      rgba(20, 51, 90, 0) 100%
+    );
+  }
+  &_dark {
+    background: linear-gradient(
+      0deg,
+      rgb(23, 31, 47) 28%,
+      rgba(23, 31, 47, 0.5) 71%,
+      rgba(23, 31, 47, 0) 100%
+    );
+  }
+}
+
+.contact,
+.gps {
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  min-width: 60px;
+  min-height: 60px;
+  @media screen and (min-width: 900px) {
+    margin: 0 2rem;
+  }
+}
+
+.gps {
+  transform: scale(0.9);
+  cursor: pointer;
+  @include theme-aware("background-color", "color-icon");
+  transition: transform ease-in 200ms;
+  & i {
+    color: white;
+  }
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.contact {
+  transform: scale(0.9);
+  cursor: pointer;
+  @include theme-aware("background-color", "color-icon");
+  transition: transform ease-in 200ms;
+  & i {
+    color: white;
+  }
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.rdv {
+  transform: scale(0.9);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5em 0.7em;
+  border-radius: 10px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  @include theme-aware("color", "color-text-meet");
+  @include theme-aware("background-color", "color-meet");
+  // background-color: rgb(255, 153, 0);
+  transition: transform ease-in 200ms;
+  &:hover {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,96 @@
+@import "./variables/color-palette";
+@import "./mixins/mixins";
+
+@font-face {
+  font-family: "eurostile";
+  src: url("/font/eurostile.ttf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "eurostileBlack";
+  src: url("/font/eurostileBlack.ttf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  min-height: 100%;
+  // color: #2f3138;
+}
+
+h1,
+h2 {
+  font-family: "eurostileBlack", "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.big_title {
+  font-size: 2.3rem;
+  margin: 1rem 0;
+  padding: 1.5rem 0;
+  position: relative;
+  text-transform: uppercase;
+  @include theme-aware("color", "color-title");
+  &_light:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background: map-get(map-get($themes, "light"), "color-icon");
+    bottom: 0;
+    left: calc(50% - 30px);
+    z-index: 0;
+  }
+  &_dark:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background: map-get(map-get($themes, "dark"), "color-icon");
+    bottom: 0;
+    left: calc(50% - 30px);
+    z-index: 0;
+  }
+}
+
+footer a,
+footer p {
+  font-size: 0.8rem;
+}
+
+.small_title {
+  font-size: 0.9rem;
+  border-bottom: 2px solid;
+  padding-bottom: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include theme-aware("border-color", "color-icon");
+}
+
+.no_scroll {
+  overflow: hidden;
+}

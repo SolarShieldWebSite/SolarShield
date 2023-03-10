@@ -1,0 +1,6 @@
+Sitemap: https://solarshield.fr/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
