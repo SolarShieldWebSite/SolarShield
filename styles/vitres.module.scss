@@ -64,6 +64,11 @@
     min-width: 100%;
     z-index: -999;
     transform: translateY(-30%);
+
+    @media screen and (max-width: 900px) {
+      transform: translateY(0%);
+      height: 100%;
+    }
   }
 }
 

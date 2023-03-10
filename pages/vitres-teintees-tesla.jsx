@@ -32,6 +32,13 @@ export default function Tesla() {
         <meta property="og:url" content="https://solarshield.fr/tesla" />
       </Head>
       <h1 className="big_title big_title_light">Prestation tesla model 3</h1>
+
+      {/* VIDEO */}
+      <div className={styles.parallaxVideo}>
+        <video autoPlay muted loop playsInline>
+          <source src="/videos/TESLA.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className={styles.text_container}>
         <p className={styles.text}>
           La <strong>Tesla model 3</strong> ne dispose pas de{" "}
@@ -100,13 +107,6 @@ export default function Tesla() {
           fournisseurs de film covering afin de vous proposer un large panel de
           couleurs et de finitions.
         </p>
-      </div>
-
-      {/* VIDEO */}
-      <div className={styles.parallaxVideo}>
-        <video autoPlay muted loop playsInline>
-          <source src="/videos/TESLA.mp4" type="video/mp4" />
-        </video>
       </div>
     </Layout>
   );
