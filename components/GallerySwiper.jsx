@@ -2,14 +2,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import styles from "./GallerySwiper.module.scss";
 
+import { Gallery, Item } from "react-photoswipe-gallery";
+
 import "swiper/css";
 import "swiper/css/virtual";
 import "swiper/css/navigation";
 import { useEffect, useState } from "react";
+import "photoswipe/dist/photoswipe.css";
 
 SwiperCore.use([Navigation, Autoplay]);
 
-function GallerySwiper({ data }) {
+function GallerySwiper({ data, galeryId = "cars" }) {
   const [format, setFormat] = useState(1);
 
   const handleResize = () => {
@@ -40,9 +43,25 @@ function GallerySwiper({ data }) {
     >
       {data.map((image, index) => (
         <SwiperSlide key={index} virtualIndex={index} className={styles.slide}>
-          <a href={image.src} target="_blank" rel="noreferrer noopener">
-            <img src={image.src} alt={image.alt} />
-          </a>
+          <Gallery id={galeryId}>
+            <Item
+              original={image.src}
+              thumbnail={image.src}
+              width="1000"
+              height="1300"
+              alt={image.alt}
+            >
+              {({ ref, open }) => (
+                <img
+                  style={{ cursor: "pointer" }}
+                  src={image.src}
+                  ref={ref}
+                  onClick={open}
+                  alt={image.alt}
+                />
+              )}
+            </Item>
+          </Gallery>
         </SwiperSlide>
       ))}
     </Swiper>
